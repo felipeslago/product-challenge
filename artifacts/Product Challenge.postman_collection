@@ -1,0 +1,260 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Product Challenge",
+		"_postman_id": "4a33924b-a22e-d619-89f6-4d43b9050190",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Image",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Images",
+					"request": {
+						"url": "http://localhost:9001/image",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Image",
+					"request": {
+						"url": "http://localhost:9001/image/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Register Image",
+					"request": {
+						"url": "http://localhost:9001/image",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\":\"png\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Image",
+					"request": {
+						"url": "http://localhost:9001/image",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1,\n\t\"type\":\"png\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Image",
+					"request": {
+						"url": "http://localhost:9001/image/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"url": "http://localhost:9001/product",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products With Images",
+					"request": {
+						"url": "http://localhost:9001/product/images",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products With Product",
+					"request": {
+						"url": "http://localhost:9001/product/product",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products With Product And Images",
+					"request": {
+						"url": "http://localhost:9001/product/product/images",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"url": "http://localhost:9001/product/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product With Images",
+					"request": {
+						"url": "http://localhost:9001/product/1/images",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product With Product",
+					"request": {
+						"url": "http://localhost:9001/product/2/product",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product With Product And Images",
+					"request": {
+						"url": "http://localhost:9001/product/2/product/images",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Set Of Product",
+					"request": {
+						"url": "http://localhost:9001/product/2/product/child",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Set Of Images",
+					"request": {
+						"url": "http://localhost:9001/product/1/images/child",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Register Product",
+					"request": {
+						"url": "http://localhost:9001/product",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"product 1\",\n\t\"description\":\"description 1\",\n\t\"product\": {\n\t\t\"name\":\"product 2\",\n\t\t\"description\":\"description 2\",\t\n\t\t\"images\":[\n\t\t\t{\n\t\t\t\t\"type\":\"bmp\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"type\":\"jpeg\"\n\t\t\t}\n\t\t]\n\t},\n\t\"images\":[\n\t\t{\n\t\t\t\"type\":\"jpg\"\n\t\t},\n\t\t{\n\t\t\t\"type\":\"png\"\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"url": "http://localhost:9001/product",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":3,\n\t\"name\":\"product 3\",\n\t\"description\":\"description 3\",\n\t\"product\":{},\n\t\"images\":[\n\t\t{\n\t\t\t\"id\":1\n\t\t},\n\t\t{\n\t\t\t\"id\":2\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"url": "http://localhost:9001/product/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
