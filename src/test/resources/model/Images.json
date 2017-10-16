@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "type": "jpg"
+  },
+  {
+    "id": 2,
+    "type": "bmp"
+  },
+  {
+    "id": 3,
+    "type": "png"
+  },
+  {
+    "id": 4,
+    "type": "jpeg"
+  },
+  {
+    "id": 5,
+    "type": "gif"
+  }
+]

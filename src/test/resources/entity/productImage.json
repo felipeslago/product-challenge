@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "name": "product 2",
+  "description": "description 2",
+  "imageEntity": [
+    {
+      "id": 1,
+      "type": "jpeg"
+    },
+    {
+      "id": 2,
+      "type": "bmp"
+    }
+  ]
+}
